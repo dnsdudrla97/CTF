@@ -1,0 +1,14 @@
+Skymark              BC 552 (Okinawa to Nagoya)
+Air Canada          AC 849  (London to Toronto)
+JAL                        JL 106 (Osaka to Tokyo)
+SkyUp                   PQ 448 (Tbilisi to Odesa)
+JAL                        JL 901 (Tokyo to Okinawa)
+Lufthansa           LH 908 (Frankfurt to London)
+ANA                      NH 2177(Tokyo to Osaka)
+
+TWCTF{TRAVEL_ADVISORY_FOR_THIS_DESTINATION}
+TWCTF{TRAVEL ADVISORY FOR THIS DESTINATION}
+TWCTF{TRAVELADVISORYFORTHISDESTINATION}
+
+Travel advisory for this destination
+TWCTF{COVID}

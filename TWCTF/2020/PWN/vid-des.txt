@@ -1,0 +1,7 @@
+Deteriorated Vi for you.
+
+Files: vid.zip
+Server: pwn03.chal.ctf.westerns.tokyo:17265
+
+Clarification:
+limit-memory = 16MB
