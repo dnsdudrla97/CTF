@@ -1,0 +1,27 @@
+hitcon{printable ascii+}
+
+oshell.py -> 
+oshell~$ Traceback (most recent call last):
+  File "/oShell.py", line 127, in <module>
+    line = raw_input(_color(prompt, 'green'))
+EOFError
+
+ssh oshell@54.150.148.61
+1a2764c4-ff45-494f-b0e9-30b95a90fdfd
+
+help
+exit
+id
+ping
+ping6
+traceroute
+traceroute6
+arp
+netstat
+top
+htop
+enable
+
+ip-172-17-0-1.ap-northeast-1.compute.internal (172.17.0.1) at 02:42:38:e2:f4:8b [ether]  on eth0
+
+

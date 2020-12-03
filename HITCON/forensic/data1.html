@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="shortcut icon" href="favicon.1593336984117.ico"/>
+<!-- <link type="text/css" href="css/reset.css" rel="stylesheet" /> -->
+<link type="text/css" href="css/widget.1593336984117.css" rel="stylesheet" />
+
+<!-- <link type="text/css" href="themes/green/css/widget.1593336984117.css" rel="stylesheet" /> -->
+<link type="text/css" href="themes/green/css/style.1593336984117.css" rel="stylesheet" />
+
+<!--[if lte IE 8]>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="themes/green/css/ie.1593336984117.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link href="themes/green/css/ie.1593336984117.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link href="themes/green/css/ie.1593336984117.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<title>Opening...</title>
+<style>
+	.icon{
+		vertical-align: top;
+		margin-top: 2px;
+	}
+	#login-characters-tips{
+		position: absolute;
+		left: 406px;
+		top: 23px;
+		color: #4d4d4d;
+	}
+</style>
+</head>
+
+<body id="login-body">
+
+<noscript>
+    <meta http-equiv="refresh" content="0; url=error.1593336984117.html"/>
+</noscript>
+
+<iframe src="./cache.1593336984117.html" frameborder="0" scrolling="auto" style="display:none" ></iframe>
+<div class="top" id="login-main">
+	<div class="top-header">
+    	<div class="top-header-wrap">
+        	<h1 id="product-tag"></h1>
+            <div id="top-control" class="top-control">
+                <input id="lan-select" tabindex="0" class="lan-select-container"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="top-main">
+    	<div class="top-main-wrap">
+            <div class="top-content login-cnt">
+            	<div class="top-content-wrap" id="top-content">
+                    <form id="form-first-login" method="post" action="/cgi-bin/luci"   class="hidden">
+                        <div id="first-login-note-cnt">
+                            <span class="text" id="first-login-note"></span>
+                        </div>
+   
+                        <div class="login-field">
+                            <label id="first-login-password-label">
+                                <span class="icon"></span>
+                                <span class="text"></span>
+                            </label>
+                            <input id="first-login-password" name="password" type="password" />
+                            <div id="login-characters-tips">
+                                <div class="tips-content-container">
+                                    <span class="tips-content-delta left"></span>
+                                    <div class="position-top-left"></div>
+                                    <div class="position-top-center"></div>
+                                    <div class="position-top-right"></div>
+                                    <div class="position-center-left">
+                                        <div class="position-center-right">
+                                            <div class="tips-content-wrap">
+                                                <div class="tips-content-container-wrap">
+                                                    <div class="tips-content">
+                                                        <span id="login-tips-content"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-bottom-left"></div>
+                                    <div class="position-bottom-center"></div>
+                                    <div class="position-bottom-right"></div>
+                                </div>
+                            </div>
+                            <div id="first-login-confirm-password-cnt" class="mt5 gap">
+                                 <label id="first-login-password-label">
+                                    <span class="icon"></span>
+                                    <span class="text"></span>
+                                </label>
+                                <input id="first-login-confirm-password" name="confirm" type="password" class="hidden" /><!-- <a class="link inline-block" href="javascript:void(0);" id="btn-forget-password"></a>  -->
+                                <input class="pwd_status"  value="" />
+                        </div>
+                        <button id="first-login-btn" type="button"></button>
+                        </div>
+                    </form>
+
+                    <form id="form-login" method="post" action="/cgi-bin/luci"  class="hidden">
+                        <div id="login-note-cnt">
+                            <span class="text" id="login-note"></span>
+                        </div>
+                        
+                        <div class="login-field">
+                            <label id="login-password-label">
+                                <span class="icon"></span>
+                                <span class="text"></span>
+                            </label>
+                            <input id="login-password" name="password" type="password" /><a class="link inline-block" href="javascript:void(0);" id="btn-forget-password"></a> 
+                           
+                        <button id="login-btn" type="button"></button>
+                            
+                        </div>
+                    </form>
+                    
+                    <form id="form-login-bind" method="post" action="/cgi-bin/luci" class="hidden">
+                        <div id="login-bind-note-cnt">
+                            <span class="text" id="login-bind-note"></span>
+                        </div>
+                    
+                        <div class="login-field">
+                            <label id="login-bind-password-label">
+                                <span class="icon"></span>
+                                <span class="text"></span>
+                            </label>
+                            <input id="login-bind-password" name="password" type="password" />
+                           
+                            <button id="login-bind-btn" type="button"></button>
+                            
+                        </div>
+                    </form>
+
+                    <div id="bound-error" class="hidden">
+                        <div class="note"></div>
+                        <div class="switch-btn"></div>
+                    </div>
+                    
+                    <iframe frameborder="0" id="cloud-login" name="cloud-login" scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="top-footer-mask"></div>
+            <div class="top-footer">
+                <div class="top-footer-wrap">
+                    <span class="help-faq">
+                        <a id="btn-faq" class="btn-faq" target="_blank" href="http://www.tp-link.com/Support/"></a>
+                        <a id="btn-app" class="btn-app" href="javascript:void(0);"></a>
+                    </span>
+                </div>
+            </div>
+            <div class="qr-code-container quick-setup hidden">
+                <div class="qr-code-container-wrapper">
+                    <div class="qr-code">
+                        <span id="close-icon" class="close-icon"></span>
+                        <div class="characters-illustrate">
+                            <span id="characters-illustrate-title" class="characters-illustrate-title"></span>
+                            <span id="characters-illustrate-note" class="characters-illustrate-note"></span>
+                        </div>
+                        <span class="qr-code-picture"></span>
+                        <div class="app-download-place">
+                            <a class="apple-store" target="_blank" href="https://itunes.apple.com/us/app/tp-link-tether/id599496594?ls=1&mt=8"></a>
+                            <a class="google-play" target="_blank" href="https://play.google.com/store/apps/details?id=com.tplink.tether"></a>
+                        </div>
+                    </div>
+                    <div class="qr-code-container-delta"></div>
+        </div>
+            </div>
+        </div>
+        
+		<div class="top-main-img"></div>
+    </div>
+</div>
+
+<!-- forget password å†…å®¹ -->
+<div id="forget-password-msg-container" class="form-panel hidden">
+    <h4 class="title forget-password-title" id="forget-password-title"></h4>
+    <div id="forget-password-situation-0" class="forget-password-situation">
+        <div>
+            <p class="note">
+                <!--<span class="title note-title"></span>-->
+                <span class="" id="forget-password-situation-0-info"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="forget-password-situation-1" class="forget-password-situation">
+        <div class="email-vertification-content">
+            <p class="note first-line" id="forget-password-situation-1-info-1"></p>
+            <input id="txt-verification-email" />
+            <button id="btn-receive-code"></button>
+            <input id="txt-verification-code" />
+            <button id="btn-forget-password-confirm"></button>
+            <div id="send-failed-info-container"><span id="send-failed-info" class="error-tips"></span></div>
+            <p class="note forget-password-situation-1-note">
+                <span class="title note-title"></span>
+                <span class="text" id="forget-password-situation-1-note"></span>
+            </p>
+        </div>
+        <div class="password-change-content hidden">
+            <p class="note first-line" id="forget-password-situation-1-info-2"></p>
+            <form id="form-forget-password" method="post" action="/cgi-bin/luci">
+                <input id="forget-login-password" name="password" type="password" />
+                <input id="forget-login-confirm-password" name="confirm" type="password" />
+                <button id="forget-password-btn" type="button"></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="forget-password-prompt" class="form-prompt successed">
+        <div class="bg"></div>
+        <div class="content">
+            <span class="icon"></span>
+            <span id="forget-password-success-prompt" class="text text-successed"></span>
+            <!-- <span class="text text-failed"></span> -->
+        </div>
+    </div>
+</div>
+
+<!-- user confilct å†…å®¹ -->
+<div id="user-conflict-msg-container" class="conflict-situation">
+    <div>
+        <h4 class="title">
+            <span class="icon"></span>
+            <span class="text" id="user-conflict-situation"></span>
+        </h4>
+        <div class="content">
+            <span id="user-conflict-situation-info"></span>
+        </div>
+    </div>
+</div>
+
+<!-- ip conflict å†…å®¹ -->
+<div id="ip-conflict-msg-container">
+
+    <div id="ip-conflict-situation-0" class="conflict-situation">
+        <h4 class="title">
+            <span class="icon"></span>
+            <span class="text" id="ip-conflict-situation-0-title"></span>
+        </h4>
+        <div class="content">
+            <span id="ip-conflict-situation-0-info"></span>
+            <a class="link" id="ip-conflict-situation-0-new" href="javascript:void(0);"></a>
+            <span id="ip-conflict-situation-0-end"></span>
+        </div>
+
+        <button type="button" id="ip-conflict-situation-0-btn-continue"></button>
+    </div>
+
+    <div id="ip-conflict-situation-1" class="conflict-situation">
+        <h4 class="title">
+            <span class="icon"></span>
+            <span class="text" id="ip-conflict-situation-1-title"></span>
+        </h4>
+        <div class="content">
+            <span id="ip-conflict-situation-1-info"></span>
+            <a class="link" id="ip-conflict-situation-1-new" href="javascript:void(0);"></a>
+            <span id="ip-conflict-situation-1-or"></span>
+            <a class="link" id="ip-conflict-situation-1-dst" href="javascript:void(0);"></a>
+            <span id="ip-conflict-situation-1-end"></span>
+        </div>
+    </div>
+
+</div>
+
+<!-- æ— å¼€cookieçš„æ“
