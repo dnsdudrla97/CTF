@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HELLO?</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+
+<div class="login-page">
+    <div class="inner">
+        <div id="window-logon">
+            <div class="title-bar">
+                <div class="title-bar-text">Windows 로그온</div>
+            </div>
+
+            <div id="logoArea">
+                <div class="logo-inner">
+                    <canvas id="canvas" width="80" height="100">
+                        This browser is not compatible with HTML5 canvas.
+                    </canvas>
+                </div>
+                <div id="section"><br/>
+                    <p id="microsoftTop">Microsoft</p>
+                    <p><span id="windowSpan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windows<sup>xp</sup></span></p>
+                    <p id="proBottom">Professional</p>
+                </div>
+
+                <nav class="pl-4">
+                    <p class="">Copyright &#169; 1985-2001</p>
+                    <p class="">Microsoft Corporation <span id="rightSpan" class="pr-4">Microsoft</span></p>
+                </nav>
+            </div>
+
+            <div id="orangeBar"></div>
+
+            <form class="login-form">
+                <label>
+                    <span class="col-3 font-weight-bold">사용자 이름:</span>
+                    <input class="col-8 userid"/>
+                </label>
+                <label>
+                    <span class="col-3 font-weight-bold">암호:</span>
+                    <input class="col-8 password" type="password"/>
+                </label>
+                <div class="btn-container">
+                    <button type="submit" class="login-btn">확인</button>
+                    <button type="button" class="register-open">생성</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="window cursor-grabbing window-alert-box">
+        <div class="title-bar">
+            <div class="title-bar-text">경고</div>
+        </div>
+        <div class="window-body">
+            <div class="d-flex align-items-center">
+                <img class="error" src="/static/img/error.png"/>
+                <span class="msg pl-2"></span>
+            </div>
+            <div class="text-center">
+                <button class="alert-close-btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window register-container cursor-grabbing">
+        <div class="title-bar">
+            <div class="title-bar-text">계정 생성</div>
+            <div class="title-bar-controls">
+                <button class="close-btn w-100 pr-4 mt-1" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <form class="register-form">
+                <div class="field-row-stacked mt-4">
+                    <label for="text22" class="mb-0">사용자 이름:</label>
+                    <input id="text22" class="ruserid mb-0"/>
+                </div>
+                <div class="field-row-stacked">
+                    <label for="text23" class="mb-0">암호</label>
+                    <input id="text23" type="password" class="rpassword mb-0"/>
+                </div>
+                <div class="field-row-stacked">
+                    <label for="text24" class="mb-0">암호 재입력</label>
+                    <input id="text24" type="password" class="vrpassword mb-0"/>
+                </div>
+                <div class="field-row-stacked mb-2">
+                    <input type="checkbox" id="example1" class="premium">
+                    <label for="example1">유료회원</label>
+                </div>
+                <div class="text-center">
+                    <button class="register-btn">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
